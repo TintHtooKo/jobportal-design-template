@@ -1,0 +1,313 @@
+.detail {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  } 
+  
+  .detail-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+  
+  .detail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; 
+  }
+  
+  .detail-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white; /* Example text color */
+    z-index: 1; /* Ensure content appears above the overlay */
+  }
+  
+  .detail-content h1 {
+    font-size: 2rem; /* Example font size */
+    text-align: center;
+  }
+  
+  .detail-content p {
+    font-size: 20px;
+    color: rgb(199, 199, 199);
+    text-align: center;
+  }
+
+  .job-detail{
+    margin: 50px 0;
+  }
+
+  .job-d-title div .map-img{
+    width: 25px;
+  }
+
+  .job-d-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+  }
+
+  .job-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .job-map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .job-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+
+  .job-d-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .job-d-btn button{
+    padding: 10px 50px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .job-d-btn button span{
+    margin-left: 5px;
+  }
+
+  .job-d-btn button:hover{
+    background-color: rgb(199, 199, 199);
+  }
+
+  .job-d-btn button img{
+    width: 30px;
+  }
+
+  .job-d-btn a{
+    text-decoration: none;
+    background-color: #1644BA;
+    color: white;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 10px;
+  }
+
+  .job-d-btn a:hover{
+    background-color: #102e7a;
+  }
+
+  .job-d-desc{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 30px 50px;
+  }
+
+  .job-d-desc-resp{
+    width: 70%;
+  }
+
+  .job-d-desc-resp .desc h5{
+    margin-top: 40px;
+    color: #1644BA;
+  }
+
+  .job-d-desc-resp .desc h5 i{
+    margin-right: 15px;
+  }
+
+  .job-d-desc-resp .desc p{
+    width: 80%;
+    color: rgb(131, 131, 131);
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+
+  .job-d-desc-resp .resp{
+    width: 80%;
+  }
+
+  .job-d-desc-resp .resp h5{
+    margin-top: 40px;
+    color: #1644BA;
+  }
+
+  .job-d-desc-resp .resp h5 i{
+    margin-right: 15px;
+  }
+
+  .job-d-desc-resp .resp p{
+    color: rgb(131, 131, 131);
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .job-d-desc-resp .resp p i{
+    margin-right: 10px;
+  }
+
+  .job-d-desc-sum div{
+    line-height: 40px;
+    background-color: rgb(248, 248, 248);
+    padding: 20px 60px;
+  }
+
+  .job-d-desc-sum h5{
+    color: #1644BA;
+    margin-bottom: 10px;
+  }
+
+  .job-d-desc-sum p{
+    font-weight: bold;
+  }
+
+  .job-d-desc-sum span{
+    font-weight: 100;
+    color: gray;
+  }
+
+
+
+  
+  
+  @media screen and (max-width: 992px) {
+
+    .job-d-title{
+      margin: 0 50px;
+    }
+
+    .job-d-title{
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+
+    .job-d-btn button{
+      padding: 10px 106px;
+    }
+
+    .job-d-btn a{
+      padding: 10px 106px;
+    }
+  
+    .detail {
+      height: 70vh;
+    }
+  
+    .detail-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .detail-content p {
+      font-size: 18px;
+    }
+
+    .job-d-desc{
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .job-d-desc-resp{
+      width: 100%;
+    }
+
+    .job-d-desc-resp .resp{
+      width: 100%;
+    }
+
+    .job-d-desc-resp img{
+      width: 100%;
+    }
+
+
+  }
+  
+  @media screen and (max-width: 576px) {
+    .detail-content h1 {
+      font-size: 1rem;
+    }
+  
+  
+    .detail-content p {
+      font-size: 16px;
+      width: 80%;
+      text-align: center;
+    }
+
+    .job-d-btn{
+      gap: 10px;
+    }
+
+    .job-d-btn button img{
+        width: 20px;
+    }
+
+    .job-d-btn button{
+      padding: 10px 45px;
+      font-size: 10px;
+    }
+
+    .job-d-title{
+      margin: 0 10px;
+    }
+
+    .job-d-btn a{
+      padding: 10px 45px;
+      font-size: 10px;
+    }
+
+    .job-d-desc-resp .resp p{
+      font-size: 14px;
+    }
+
+    .job-d-desc-resp .desc p{
+      font-size: 15px;
+    }
+
+    .job-d-desc{
+      margin: 10px 10px;
+    }
+
+    .job-d-desc-resp img{
+      width: 100%;
+    }
+
+    .job-type{
+      gap: 10px;
+    }
+
+    .job-logo{
+      gap: 20px;
+    }
+  }
+  

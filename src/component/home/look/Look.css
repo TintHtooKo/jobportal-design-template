@@ -1,0 +1,72 @@
+.look{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px ;
+    padding: 40px 0;
+    background-color: #143EAA;
+    width: 100%;
+}
+
+.look div h3{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.look div p{
+    color: white;
+    font-size: 18px;
+}
+
+.look a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 80px;
+    background-color: #FFF568;
+}
+
+@media screen and (max-width: 992px) {
+    .look{
+        padding: 30px 20px;
+    }
+    .look div h3{
+        font-size: 28px;
+    }
+
+    .look div p{
+        width: 70%;
+    }
+
+    .look a{
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .look{
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .look div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .look div h3{
+        font-size: 28px;
+    }
+
+
+    .look div p{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}

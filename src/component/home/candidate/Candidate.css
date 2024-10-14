@@ -1,0 +1,57 @@
+.candidate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.candidate h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.candidate p{
+    font-size: 23px;
+    text-align: center;
+    width: 60%;
+    margin-top: 10px;
+    color: rgb(119, 119, 119);
+}
+
+.candidate-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+@media screen and (max-width: 992px) {
+    .candidate h1{
+        font-size: 35px;
+    }
+
+    .candidate p{
+        font-size: 23px;
+        width: 80%;
+    }
+
+    .candidate-logo{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .candidate-logo{
+        flex-direction: column;
+    }
+
+    .candidate h1{
+        font-size: 25px;
+    }
+
+    .candidate p{
+        font-size: 18px;
+        width: 100%;
+    }
+}

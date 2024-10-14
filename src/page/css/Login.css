@@ -1,0 +1,72 @@
+.signlog form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 450px;
+}
+
+.signlog form input{
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
+.signlog form span{
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+
+.signlog form span a{
+    text-decoration: none;
+}
+
+.signlog form .phone{
+    width: 500px;
+}
+
+.signlog form button{
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    background-color: #1645BE;
+    margin: 15px 0;
+}
+
+.signlog form button:hover{
+    background-color: #133792;
+}
+
+.signlog h1{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.signlog form a{
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 992px) {
+    .signlog form{
+        margin: 50px 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .signlog form{
+        margin: 20px 50px;
+    }
+
+    .signlog form input{
+        width: 100%;
+    }
+
+    .signlog form .phone{
+        width: 100%;
+    }
+    
+}

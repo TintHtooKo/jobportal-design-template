@@ -1,0 +1,74 @@
+/* Ensures the entire slider is centered */
+.testimonial-carousel {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Centers the content inside each slide */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Add some padding to space out the content */
+    height: 100%;
+}
+
+.testimonial img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.testimonial p {
+    font-size: 23px;
+    font-style: italic;
+    color: #6d6d6d;
+    width: 70%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.testimonial span {
+    font-size: 20px;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slick-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial p{
+        font-size: 20px;
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .testimonial span {
+        font-size: 16px;
+    }
+}

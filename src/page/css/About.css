@@ -1,0 +1,256 @@
+.about {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  } 
+  
+  .about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+  
+  .about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; 
+  }
+  
+  .about-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white; /* Example text color */
+    z-index: 1; /* Ensure content appears above the overlay */
+  }
+  
+  .about-content h1 {
+    font-size: 4rem; /* Example font size */
+    text-align: center;
+  }
+  
+  .about-content p {
+    font-size: 20px;
+    color: rgb(199, 199, 199);
+    text-align: center;
+  }
+
+  .about-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 80px;
+  }
+
+  .about-img img{
+    width: 500px;
+  }
+
+  .about-career h1{
+    font-weight: bold;
+  }
+
+  .about-career p{
+    font-size: 25px;
+    width: 89%;
+  }
+
+  .about-career span{
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+  }
+
+  .team{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 50px 100px;
+  }
+
+  .team-1 h3{
+    margin-top: 20px;
+  }
+
+  .team-1 p{
+    font-size: 20px;
+    color: rgb(187, 187, 187);
+  }
+
+  .team-1 span{
+    font-size: 18px;
+    color: rgb(126, 126, 126);
+  }
+
+  .team-2 h3{
+    margin-top: 20px;
+  }
+
+  .team-2 p{
+    font-size: 20px;
+    color: rgb(187, 187, 187);
+  }
+
+  .team-2 span{
+    font-size: 18px;
+    color: rgb(126, 126, 126);
+  }
+  
+ div.icon .icon-list{
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+
+  
+  @media screen and (max-width: 992px) {
+
+    .about {
+      height: 70vh;
+    }
+  
+    .about-1{
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+  
+    .about-content h1 {
+      font-size: 3rem;
+    }
+  
+    .about-content p {
+      font-size: 18px;
+    }
+
+    .about-img img{
+        width: 100%;
+      }
+
+      .about-career{
+        margin: 0 80px;
+      }
+    
+      .about-career h1{
+        font-weight: bold;
+        font-size: 30px;
+      }
+    
+      .about-career p{
+        font-size: 20px;
+
+      }
+    
+      .about-career span{
+        font-size: 16px;
+        color: rgb(97, 97, 97);
+      }
+
+      .team{
+        margin: 50px 20px;
+      }
+
+      .team-1 img{
+        width: 90%;
+      }
+
+      .team-2 img{
+        width: 90%;
+      }
+    
+      .team-1 p{
+        font-size: 18px;
+        color: rgb(187, 187, 187);
+      }
+    
+      .team-1 span{
+        font-size: 16px;
+        color: rgb(126, 126, 126);
+      }
+
+      .team-2 p{
+        font-size: 18px;
+        color: rgb(187, 187, 187);
+      }
+    
+      .team-2 span{
+        font-size: 16px;
+        color: rgb(126, 126, 126);
+      }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .about-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-career{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .about-career h1{
+        font-weight: bold;
+        font-size: 20px;
+        
+      }
+    
+      .about-career p{
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .about-career span{
+        font-size: 12px;
+        text-align: center;
+      }
+
+    .about-img img{
+        width: 300px;
+      }
+    .about-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-content p {
+      font-size: 16px;
+      width: 80%;
+      text-align: center;
+    }
+
+    .team{
+        flex-direction: column;
+    }
+
+    .team-1 img{
+      width: 100%;
+    }
+
+    .team-2 img{
+      width: 100%;
+    }
+  }
+  

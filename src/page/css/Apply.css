@@ -1,0 +1,117 @@
+.parent {
+    width: 450px;
+    margin: auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 7px 20px 20px rgb(210, 227, 244);
+  }
+  .file-upload {
+    text-align: center;
+    border: 3px dashed rgb(210, 227, 244);
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .file-upload p {
+    font-size: 0.87rem;
+    margin-top: 10px;
+    color: #bbcada;
+  }
+  .file-upload input {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .file-upload img{
+    width: 80px;
+  }
+
+  .apply form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 450px;
+}
+
+.apply form input{
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
+.apply form textarea{
+    width: 500px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
+.apply form button{
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    background-color: #1645BE;
+    margin: 15px 0;
+}
+
+.apply form button:hover{
+    background-color: #133792;
+}
+
+.apply form .phone{
+    width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+    .apply form{
+        margin: 50px 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .apply form{
+        margin: 20px 50px;
+    }
+
+    .apply form input{
+        width: 100%;
+    }
+
+    .apply form textarea{
+        width: 100%;
+    }
+
+    .apply form .phone{
+        width: 100%;
+    }
+
+    .parent{
+        width: 100%;
+    }
+
+    .file-upload img{
+        width: 40px;
+    }
+
+    .file-upload h5{
+        font-size: 18px;
+    }
+
+    .file-upload p{
+        font-size: 14px;
+    }
+    
+}
